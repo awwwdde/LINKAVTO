@@ -1,5 +1,7 @@
 import { Trophy } from 'lucide-react';
 import StepCard from '../components/StepCard/StepCard';
+import img2 from '../img/img2.png';
+import img3 from '../img/img3.png';
 
 const Landing = () => {
   const buyingSteps = [
@@ -71,9 +73,8 @@ const Landing = () => {
           </div>
           <div className="w-[605px] ml-[415px] mr-5 flex flex-col justify-end">
             <div className="flex items-center gap-2 mb-5">
-                <span className="text-black text-[16px] font-medium">
-                    Удобная площадка для покупки необходимых запчастей для вашей техники! <br />
-                    Мы работает с крупными поставщиками авто/мото техники, а также с грузовым и спец транспортом!
+                <span className="text-black text-[16px] font-medium text-justify">
+                    Удобная площадка для покупки необходимых запчастей для вашей техники! Мы работает с крупными поставщиками авто/мото техники, а также с грузовым и спец транспортом!
                 </span>
             </div>
             <div>
@@ -84,7 +85,7 @@ const Landing = () => {
           </div>
         </div>
         <div className="w-full relative mt-[50px]">
-          <div className="relative w-[1720px] h-[650px] border rounded-[15px] overflow-hidden mx-auto flex items-stretch">
+          <div className="relative w-[1720px] h-[650px] rounded-[15px] overflow-hidden mx-auto flex items-stretch">
             <img
               src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1920&h=600&fit=crop"
               alt="Автомобили"
@@ -126,7 +127,7 @@ const Landing = () => {
           </div>
         </div>
       </section>
-
+      
       <section
         id="how-to-buy"
         className="w-full max-w-[1720px] mx-auto px-5 mt-[100px]"
@@ -146,12 +147,33 @@ const Landing = () => {
           ))}
         </div>
       </section>
-
+      <section className="w-full max-w-[1720px] mx-auto px-5 mt-[100px]">
+      <div className="w-full relative mt-[50px]">
+          <div className="relative w-[1720px] h-[400px] rounded-[15px] overflow-hidden mx-auto flex items-stretch">
+            <img
+              src={img2}
+              alt="Автомобили"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/30 backdrop-blur-sm"></div>
+            <div className="absolute bottom-[40px] left-[40px] z-10 flex flex-row items-center gap-10">
+                <div className='flex flex-col justify-center'>
+                    <span className="text-white text-[40px] font-bold">
+                        Вы продавец?
+                    </span>
+                    <span className="text-white text-[16px] font-medium">
+                        Посмотрите как правильно продавать!
+                    </span>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section
         id="how-to-sell"
         className="w-full max-w-[1720px] mx-auto px-5 mt-[100px]"
       >
-        <h2 className="text-[24px] mb-2 font-semibold">Начать продавать — просто</h2>
+        <h2 className="text-[24px] mb-2 font-semibold">Начать продавать — еще проще</h2>
         <p className="text-[16px] max-w-[600px] text-left text-[#7A7A7A] mb-8">
           Всего 4 шага до первых заказов
         </p>
@@ -164,6 +186,64 @@ const Landing = () => {
               description={step.description}
             />
           ))}
+        </div>
+      </section>
+      <section className="w-full max-w-[1720px] mx-auto px-5 mt-[100px]">
+        <div className="w-full relative mt-[50px]">
+          <div className="relative w-[1720px] h-[500px] rounded-[15px] overflow-hidden mx-auto flex items-stretch">
+            <img
+              src={img3}
+              alt="Преимущества работы с нами"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/80 backdrop-blur-sm"></div>
+            <div className="absolute inset-0 z-10 flex flex-col justify-center items-start px-[60px] gap-6">
+              <div className="flex flex-col gap-4 max-w-[800px]">
+                <h2 className="text-white text-[20px] font-bold leading-tight">
+                  Преимущества работы с нами
+                </h2>
+                <div className="flex flex-col gap-3 mt-2">
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                    <span className="text-white text-[16px] font-medium">
+                      Широкая база проверенных поставщиков и покупателей
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                    <span className="text-white text-[16px] font-medium">
+                      Прозрачные условия сотрудничества
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                    <span className="text-white text-[16px] font-medium">
+                      Быстрая регистрация и начало работы за 48 часов
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                    <span className="text-white text-[16px] font-medium">
+                      Удобный интерфейс и профессиональная поддержка
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                    <span className="text-white text-[16px] font-medium">
+                      Комиссия 1% от продаж и никаких штрафов, в отличии от других маркетплейсов
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-4">
+                <button className="bg-[#89BEE8] text-white text-[16px] font-medium px-6 py-3 rounded-full cursor-pointer transition-all duration-300 hover:bg-[#89BEE8] hover:text-black">
+                  <a href='https://t.me/Ilya_Feok' target="_blank" className="no-underline">
+                    Запишитесь на демообзор, чтобы начать работу с нами
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>

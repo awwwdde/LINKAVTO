@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import Header from './components/header/header';
 import Landing from './pages/landing';
+import Footer from './components/footer/footer';
 import './App.css';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
     <>
       <Header />
       <Landing />
+      <Footer />
     </>
   );
 }
