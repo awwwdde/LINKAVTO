@@ -1,6 +1,52 @@
 import { Trophy } from 'lucide-react';
+import StepCard from '../components/StepCard/StepCard';
 
 const Landing = () => {
+  const buyingSteps = [
+    {
+      stepNumber: 1,
+      title: 'Регистрация на платформе',
+      description: 'Создайте аккаунт за несколько минут, заполнив базовую информацию о себе и своем бизнесе.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Поиск нужных запчастей',
+      description: 'Используйте удобный поиск и фильтры, чтобы найти необходимые детали среди тысяч предложений.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Сравнение предложений',
+      description: 'Просматривайте цены, условия доставки и рейтинги продавцов, чтобы выбрать лучшее предложение.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Оформление заказа',
+      description: 'Оформите покупку в несколько кликов и получите запчасти с гарантией качества от проверенных поставщиков.',
+    },
+  ];
+
+  const sellingSteps = [
+    {
+      stepNumber: 1,
+      title: 'Регистрация продавца',
+      description: 'Заполните форму регистрации, предоставьте информацию о компании и пройдите верификацию.',
+    },
+    {
+      stepNumber: 2,
+      title: 'Добавление товаров',
+      description: 'Загрузите каталог запчастей с фотографиями, описаниями и актуальными ценами через удобный интерфейс.',
+    },
+    {
+      stepNumber: 3,
+      title: 'Настройка условий продажи',
+      description: 'Установите условия доставки, оплаты и возврата, которые будут отображаться покупателям.',
+    },
+    {
+      stepNumber: 4,
+      title: 'Начало продаж',
+      description: 'После модерации ваши товары появятся в каталоге, и вы начнете получать заказы от покупателей.',
+    },
+  ];
   return (
     <div>
       <section className="min-h-screen flex flex-col justify-start pt-[100px] px-5 scroll-mt-[100px]">
@@ -83,22 +129,42 @@ const Landing = () => {
 
       <section
         id="how-to-buy"
-        className="min-h-screen flex flex-col items-center justify-center pt-[100px] px-5 scroll-mt-[100px]"
+        className="w-full max-w-[1720px] mx-auto px-5 mt-[100px]"
       >
-        <h2 className="text-5xl mb-5">Как покупать</h2>
-        <p className="text-lg max-w-[600px] text-center">
-          Здесь будет информация о том, как покупать автомобили
+        <h2 className="text-[24px] mb-2 font-semibold">Начать покупать — просто</h2>
+        <p className="text-[16px] max-w-[600px] text-left text-[#7A7A7A] mb-8">
+          Всего 4 шага до первых покупок
         </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+          {buyingSteps.map((step) => (
+            <StepCard
+              key={step.stepNumber}
+              stepNumber={step.stepNumber}
+              title={step.title}
+              description={step.description}
+            />
+          ))}
+        </div>
       </section>
 
       <section
         id="how-to-sell"
-        className="min-h-screen flex flex-col items-center justify-center pt-[100px] px-5 scroll-mt-[100px]"
+        className="w-full max-w-[1720px] mx-auto px-5 mt-[100px]"
       >
-        <h2 className="text-5xl mb-5">Как продавать</h2>
-        <p className="text-lg max-w-[600px] text-center">
-          Здесь будет информация о том, как продавать автомобили
+        <h2 className="text-[24px] mb-2 font-semibold">Начать продавать — просто</h2>
+        <p className="text-[16px] max-w-[600px] text-left text-[#7A7A7A] mb-8">
+          Всего 4 шага до первых заказов
         </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+          {sellingSteps.map((step) => (
+            <StepCard
+              key={step.stepNumber}
+              stepNumber={step.stepNumber}
+              title={step.title}
+              description={step.description}
+            />
+          ))}
+        </div>
       </section>
     </div>
   );
