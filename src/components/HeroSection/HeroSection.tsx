@@ -73,7 +73,7 @@ const HeroSection = () => {
           <div ref={buttonRef}>
             <button className="bg-[#000000] text-white text-[14px] font-medium px-4 py-2 rounded-full w-[250px] h-[35px] cursor-pointer transition-all duration-300 hover:bg-[#89BEE8]">
               <a href="https://t.me/Ilya_Feok" target="_blank" rel="noreferrer">
-                Записаться на демообзор
+                Расскажу про сервис
               </a>
             </button>
           </div>
