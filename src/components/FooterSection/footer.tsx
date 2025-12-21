@@ -25,10 +25,10 @@ const Footer = () => {
         <div className="ml-auto flex items-center gap-6">
           <div className="flex items-center gap-4">
             <a
-              href="https://tenchat.ru"
+              href="https://tenchat.ru/5050613"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black text-[14px] font-bold hover:text-[#89BEE8] transition-colors duration-300"
+              className="text-black text-[14px] font-medium hover:text-[#89BEE8] transition-colors duration-300"
             >
               TENCHAT
             </a>
@@ -36,7 +36,7 @@ const Footer = () => {
               href="https://t.me/Ilya_Feok"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black text-[14px] font-bold hover:text-[#89BEE8] transition-colors duration-300"
+              className="text-black text-[14px] font-medium hover:text-[#89BEE8] transition-colors duration-300"
             >
               TELEGRAM
             </a>
@@ -44,7 +44,7 @@ const Footer = () => {
               href="https://productradar.ru"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black text-[14px] font-bold hover:text-[#89BEE8] transition-colors duration-300"
+              className="text-black text-[14px] font-medium hover:text-[#89BEE8] transition-colors duration-300"
             >
               PRODUCT RADAR
             </a>

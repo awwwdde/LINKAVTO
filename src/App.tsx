@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
-import Header from './components/header/header';
+import Header from './components/HeaderSection/header';
 import Landing from './pages/landing';
-import Footer from './components/footer/footer';
+import Footer from './components/FooterSection/footer';
 import './App.css';
 
 function App() {
@@ -13,11 +13,7 @@ function App() {
       document.title = `LINKAVTO | ${titles[currentIndex]}`;
       currentIndex = (currentIndex + 1) % titles.length;
     };
-
-    // Обновляем title каждые 2 секунды
     const interval = setInterval(updateTitle, 2000);
-
-    // Устанавливаем начальный title
     updateTitle();
 
     return () => clearInterval(interval);
