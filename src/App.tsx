@@ -3,6 +3,7 @@ import Header from './components/HeaderSection/header';
 import Landing from './pages/landing';
 import Footer from './components/FooterSection/footer';
 import './App.css';
+import Preloader from './pages/preloader';
 
 function App() {
   useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <>
+      <Preloader />
       <Header />
       <Landing />
       <Footer />

@@ -51,7 +51,7 @@ const GoalsSection = () => {
         </div>
         <div className="w-full md:w-2/3">
           <h2 className="text-3xl md:text-4xl font-semibold leading-tight text-black mb-6">
-            LinkAvto — это мост между вами и правильной деталью.
+            LinkAvto - это мост между вами и правильной деталью.
           </h2>
           <p className="text-[16px] font-medium text-[#7A7A7A] leading-relaxed max-w-2xl">
             Мы превратили сложный процесс поиска автозапчастей в простой и интуитивный сервис, 
