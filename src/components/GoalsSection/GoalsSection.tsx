@@ -32,7 +32,7 @@ const GoalsSection = () => {
     // Анимация текста с эффектом появления по словам
     const words = textRef.current.textContent?.split(' ') || [];
     textRef.current.innerHTML = words
-      .map((word, i) => `<span style="opacity: 0;">${word}</span>`)
+      .map((word) => `<span style="opacity: 0;">${word}</span>`)
       .join(' ');
 
     const wordSpans = textRef.current.querySelectorAll('span');
