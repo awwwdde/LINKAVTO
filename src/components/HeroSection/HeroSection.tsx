@@ -40,38 +40,38 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="min-h-screen flex flex-col justify-start pt-[100px] px-5 scroll-mt-[100px]">
-      <div className="w-full max-w-[1720px] mx-auto flex items-stretch">
-        <div className="w-[605px] flex flex-col gap-4">
+    <section className="h-auto flex flex-col justify-start pt-[20px] md:pt-20 lg:pt-[100px] px-4 sm:px-5 scroll-mt-[100px]">
+      <div className="w-full max-w-[1720px] mx-auto flex flex-col lg:flex-row items-stretch gap-8 lg:gap-0">
+        <div className="w-full lg:w-[605px] flex flex-col gap-4">
           <div
             ref={badgeRef}
-            className="flex items-center gap-2 px-4 py-2 border border-black-300 rounded-full w-[380px]"
+            className="flex items-center gap-2 px-3 sm:px-4 py-2 border border-black-300 rounded-full w-full sm:w-auto sm:max-w-[380px]"
           >
-            <Trophy className="w-[15px] h-[15px] text-black" />
-            <span className="text-black text-sm">
-              Маркетплейс №1 для запчастей любого транспорта
+            <Trophy className="w-[15px] h-[15px] text-black flex-shrink-0" />
+            <span className="text-black text-xs sm:text-sm">
+              Централизованный маркетплейс №1 для запчастей
             </span>
           </div>
           <div ref={titleRef}>
-            <span className="text-black text-[40px] font-bold leading-[105%] tracking-[1.5px]">
+            <span className="text-black text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-bold leading-[105%] tracking-[0.5px] sm:tracking-[1.5px]">
               Продавайте и покупайте автозапчасти на удобном маркетплейсе
             </span>
           </div>
-          <div ref={subtitleRef} className="mt-0.3">
-            <span className="text-[#7A7A7A] text-[16px] font-medium">
+          <div ref={subtitleRef} className="mt-1">
+            <span className="text-[#7A7A7A] text-sm sm:text-[16px] font-medium">
               Забудьте про вечный поиск нужного сайта, в LINKAVTO найдется все от разных поставщиков!
             </span>
           </div>
         </div>
-        <div className="w-[605px] ml-[415px] mr-5 flex flex-col justify-end">
+        <div className="w-full lg:w-[605px] lg:ml-[415px] lg:mr-5 flex flex-col justify-end">
           <div ref={rightTextRef} className="flex items-center gap-2 mb-5">
-            <span className="text-black text-[16px] font-medium text-justify">
+            <span className="text-black text-sm sm:text-[16px] font-medium text-justify">
               Удобная площадка для покупки необходимых запчастей для вашей техники! Мы работает с
               крупными поставщиками авто/мото техники, а также с грузовым и спец транспортом!
             </span>
           </div>
           <div ref={buttonRef}>
-            <button className="bg-[#000000] text-white text-[14px] font-medium px-4 py-2 rounded-full w-[250px] h-[35px] cursor-pointer transition-all duration-300 hover:bg-[#89BEE8]">
+            <button className="bg-[#000000] text-white text-xs sm:text-sm md:text-[14px] font-medium px-4 py-2 rounded-full w-full sm:w-[250px] h-[35px] cursor-pointer transition-all duration-300 hover:bg-[#89BEE8]">
               <a href="https://t.me/Ilya_Feok" target="_blank" rel="noreferrer">
                 Расскажу про сервис
               </a>
@@ -85,4 +85,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-

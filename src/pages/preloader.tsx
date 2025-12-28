@@ -67,11 +67,13 @@ const Preloader: React.FC = () => {
     <div ref={containerRef} style={styles.overlay}>
       <svg
         ref={svgRef}
-        width="400"
-        height="293"
+        width="300"
+        height="220"
         viewBox="0 0 629 460"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        className="w-[70vw] max-w-[400px] h-auto"
+        preserveAspectRatio="xMidYMid meet"
       >
         <path
           ref={path1Ref}

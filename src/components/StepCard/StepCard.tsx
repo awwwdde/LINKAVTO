@@ -42,11 +42,11 @@ const StepCard = ({ stepNumber, title, description }: StepCardProps) => {
   return (
     <div
       ref={cardRef}
-      className="w-[415px] h-[300px] bg-gray-100 flex flex-col gap-4 p-6 rounded-[15px] hover:shadow-lg transition-shadow duration-300"
+      className="w-full max-w-[415px] mx-auto h-auto min-h-[280px] sm:min-h-[300px] bg-gray-100 flex flex-col gap-3 sm:gap-4 p-4 sm:p-6 rounded-[15px] hover:shadow-lg transition-shadow duration-300"
     >
-      <span className="text-black text-[48px] font-bold">{formattedStep}</span>
-      <p className="text-black text-[24px] font-medium leading-tight pt-[80px]">{title}</p>
-      <p className="text-[#7A7A7A] text-[16px] font-medium leading-tight">{description}</p>
+      <span className="text-black text-3xl sm:text-4xl md:text-[48px] font-bold">{formattedStep}</span>
+      <p className="text-black text-lg sm:text-xl md:text-2xl lg:text-[24px] font-medium leading-tight pt-8 sm:pt-12 md:pt-[80px]">{title}</p>
+      <p className="text-[#7A7A7A] text-sm sm:text-[16px] font-medium leading-tight">{description}</p>
     </div>
   );
 };

@@ -59,8 +59,8 @@ const StatsBanner = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="w-full relative mt-[50px]" data-header-theme="dark">
-      <div className="relative w-[1720px] h-[650px] rounded-[15px] overflow-hidden mx-auto flex items-stretch">
+    <div ref={containerRef} className="w-full relative mt-2 sm:mt-8 md:mt-12 lg:mt-[50px]" data-header-theme="dark">
+      <div className="relative w-full max-w-[1720px] h-[400px] sm:h-[500px] md:h-[600px] lg:h-[650px] rounded-[15px] overflow-hidden mx-auto flex items-stretch">
         <img
           ref={imageRef}
           src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1920&h=600&fit=crop"
@@ -68,15 +68,15 @@ const StatsBanner = () => {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/30 backdrop-blur-sm"></div>
-        <div ref={statsRef} className="absolute bottom-[40px] left-[40px] z-10 flex flex-row items-start gap-10">
+        <div ref={statsRef} className="absolute bottom-2 sm:bottom-6 md:bottom-[40px] left-2 sm:left-6 md:left-[40px] z-10 flex flex-row items-start gap-3 sm:gap-8 md:gap-10">
           <div ref={stat1Ref} className="flex flex-col justify-start">
-            <span className="text-white text-[40px] font-bold">1%</span>
-            <span className="text-white text-[16px] font-medium">минимальная комиссия</span>
+            <span className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-bold">1%</span>
+            <span className="text-white text-xs sm:text-[16px] font-medium">минимальная комиссия</span>
           </div>
-          <div className="w-[1px] bg-white h-[65px] self-center"></div>
+          <div className="w-[1px] bg-white h-10 sm:h-16 md:h-[65px] self-center"></div>
           <div ref={stat2Ref} className="flex flex-col justify-start">
-            <span className="text-white text-[40px] font-bold">48ч</span>
-            <span className="text-white text-[16px] font-medium">до первых продаж</span>
+            <span className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-bold">48ч</span>
+            <span className="text-white text-xs sm:text-[16px] font-medium">до первых продаж</span>
           </div>
         </div>
       </div>

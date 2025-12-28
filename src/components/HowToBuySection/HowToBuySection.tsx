@@ -36,14 +36,14 @@ const HowToBuySection = ({ steps }: HowToBuySectionProps) => {
   }, []);
 
   return (
-    <section ref={sectionRef} id="how-to-buy" className="w-full max-w-[1720px] mx-auto px-5 mt-[100px]">
-      <h2 ref={titleRef} className="text-[24px] mb-2 font-semibold">
+    <section ref={sectionRef} id="how-to-buy" className="w-full max-w-[1720px] mx-auto px-4 sm:px-5 mt-12 sm:mt-16 md:mt-20 lg:mt-[100px]">
+      <h2 ref={titleRef} className="text-xl sm:text-2xl md:text-[24px] mb-2 font-semibold">
         Начать покупать — просто
       </h2>
-      <p ref={subtitleRef} className="text-[16px] max-w-[600px] text-left text-[#7A7A7A] mb-8">
+      <p ref={subtitleRef} className="text-sm sm:text-[16px] max-w-[600px] text-left text-[#7A7A7A] mb-6 sm:mb-8">
         Всего 4 шага до первых покупок
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-6 sm:mt-8">
         {steps.map((step) => (
           <StepCard
             key={step.stepNumber}
